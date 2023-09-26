@@ -12,6 +12,7 @@ body {
 
 .container {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .sketch-area {
@@ -31,4 +32,19 @@ body {
   width: .25rem;
   height: .25rem;
   background-color: #fff;
+}
+
+.ui-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 100vh;
+}
+
+.get-grid-size {
+  display: flex;
+  justify-content: space-between;
+  width: 20vw;
 }
