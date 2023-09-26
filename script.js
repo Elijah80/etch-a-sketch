@@ -19,6 +19,10 @@ function createSketchArea(gridSize) {
 			for (let j = 0; j < gridSize; ++j) {
 				const gridItem = createElement('div', 'grid-item')
 
+        gridItem.addEventListener('mouseover', function() {
+          gridItem.style.backgroundColor = '#000';
+        });
+
 				gridRow.appendChild(gridItem)
 			}
 
@@ -32,4 +36,4 @@ function createSketchArea(gridSize) {
   container.appendChild(sketchArea);
 }
 
-createSketchArea(48)
+createSketchArea(16)
