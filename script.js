@@ -36,4 +36,31 @@ function createSketchArea(gridSize) {
   container.appendChild(sketchArea);
 }
 
-createSketchArea(16)
+function createUI(){
+  const uiSection = createElement('div', 'ui-section');
+  const getSize = createElement('div', 'get-grid-size');
+  const gridSizeLabel = createElement('label', 'grid-size-label');
+  const gridSizeInput = createElement('input', 'grid-size-input');
+  const setGridSize = createElement('button', 'set-size-btn');
+
+  gridSizeLabel.setAttribute('for', 'grid-size');
+  gridSizeLabel.textContent = 'Sketch Pad Size: '
+  gridSizeInput.setAttribute('type', 'text');
+  gridSizeInput.setAttribute('id', 'grid-size');
+  setGridSize.textContent = 'Set Size';
+
+  getSize.appendChild(gridSizeLabel);
+  getSize.appendChild(gridSizeInput);
+  getSize.appendChild(setGridSize);
+
+  uiSection.appendChild(getSize);
+
+  container.appendChild(uiSection);
+}
+
+function sketch() {
+  createSketchArea(16)
+  createUI();
+}
+
+sketch();
