@@ -10,6 +10,12 @@ body {
   color: #fff;
 }
 
+.header {
+  font-size: 6rem;
+  text-align: center;
+  padding-top: 50px;
+}
+
 .container {
   display: flex;
   justify-content: space-evenly;
@@ -41,10 +47,47 @@ body {
   align-items: center;
   width: 50vw;
   height: 100vh;
+  font-size: 1.5rem;
 }
 
 .get-grid-size {
   display: flex;
-  justify-content: space-between;
-  width: 20vw;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+}
+
+.grid-size-label {
+  display: flex;
+  align-items: center;
+  letter-spacing: 3px;
+}
+
+.grid-size-input {
+  background-color: transparent;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 10px;
+  width: 6rem;
+}
+
+.grid-size-input:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  outline: none;
+}
+
+.set-size-btn {
+  background-color: transparent;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1.5rem;
+  width: 10rem;
+}
+
+.set-size-btn:hover {
+  background-color: #fff;
+  color: #000;
 }
